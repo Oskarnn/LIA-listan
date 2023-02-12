@@ -4,7 +4,7 @@
 <template>
     <div>
         <ul>
-            <li v-for="company in companies">{{  }}</li>
+            <!-- <li v-for="company in companies">{{  }}</li> -->
         </ul>
     </div>
 </template>

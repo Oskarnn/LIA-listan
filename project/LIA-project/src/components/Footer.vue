@@ -4,7 +4,7 @@ export default {
     return {
       date: "2023-02-09",
     };
-  },
+  }
 };
 </script>
 
