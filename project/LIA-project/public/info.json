@@ -19,7 +19,7 @@
         "name": "Chili media",
         "info": "Webbbyrå",
         "location": "Umeå",
-        "status": "Inväntar svar"
+        "status": "Tackat nej"
     },
     {
         "id": "4",
@@ -33,7 +33,7 @@
         "name": "Epidemic sounds",
         "info": "Ljudkreatörer",
         "location": "Stockholm",
-        "status": "Inväntar svar"
+        "status": "Tackat nej"
     },
     {
         "id": "6",
@@ -54,20 +54,20 @@
         "name": "Anyday",
         "info": "Webbbyrå",
         "location": "Umeå",
-        "status": "Inväntar svar"
+        "status": "Kallad på intervju"
     },
     {
         "id": "9",
         "name": "Web express AB",
         "info": "Webbbyrå",
         "location": "Stockholm",
-        "status": "Inväntar svar"
+        "status": "Tackat nej"
     },
     {
         "id": "10",
         "name": "Cypoint",
         "info": "Webbbyrå",
         "location": "Stockholm/ Umeå",
-        "status": "Inväntar svar"
+        "status": "Kallad på intervju"
     }
 ]

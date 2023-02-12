@@ -1,3 +1,5 @@
+<!-- KAN HA EN SIFFRA MED HUR ÅNGA FÖRETAG SOM ÄR PENDING? -->
+
 <script>
 export default {
   data() {
