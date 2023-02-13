@@ -17,16 +17,18 @@
                 fetch('/info.json')
                 .then((response) => response.json())
                 .then((result) =>  {
-                    this.companies = result})
+                    this.companies = result;
+                    })
 
             },
-        //  delete() LÄGGA IN FUNKTION FÖR ATT VISA TT LISTAN UPPDATERATS FRÅN 
+        //  delete()
         }
     }
 </script>
 
 <template>
     <section :class="listClass">
+
         <div class="list" id="list-1">
             <h3>Inväntar svar</h3>
             <ul v-for="company in companies">
@@ -55,7 +57,9 @@
             </ul>
         </div>
     </section>
-    <button @click="fetch()">Uppdatera listan</button>
+    <div id="btn">
+        <button @click="fetch()">Uppdatera listan</button>
+    </div>
 </template>
 
 <style scoped>
@@ -64,23 +68,59 @@
         display: flex;
         justify-content: space-evenly;
         align-items: flex-start;
+
         margin-top: 5vh;
 
     }
 
+    ul{
+        list-style-type: none;
+
+    }
+
+    li {
+        margin: 7vh;
+        border: 1px solid black;
+        border-radius: 20px;
+
+    }
+    h3{
+        margin-top: 4vh;
+    }
+
     .list {
         min-width: 300px;
+        text-align: center;
+        border-radius: 20px;
 
     }
 
     #list-1{
-        background-color: rgba(255,255,0, 0.3);
+        background-color: rgba(255,255,0, 0.2);
 
     }
     #list-2{
-        background-color: rgba(239, 90, 90, 0.233);
+        background-color: rgba(239, 90, 90, 0.1);
     }
     #list-3{
-        background-color: rgba(118, 211, 136, 0.233);
+        background-color: rgba(118, 211, 136, 0.1);
+    }
+
+    #btn {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    button {
+        text-decoration: none;
+        border-radius: 30px;
+        background-color: white;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    button:hover{
+        padding: 10px 15px;
     }
 </style>

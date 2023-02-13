@@ -24,7 +24,7 @@ div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 10vh;
   min-height: 10vh;
 }
 </style>

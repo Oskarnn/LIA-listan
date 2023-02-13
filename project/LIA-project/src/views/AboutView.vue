@@ -3,10 +3,7 @@ import DataForm from '../components/DataForm.vue'
 </script>
 
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-  <div class="form">
+  <div>
     <DataForm/>
   </div>
 </template>
