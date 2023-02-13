@@ -20,7 +20,7 @@
                     this.companies = result})
 
             },
-        //  delete()
+        //  delete() LÄGGA IN FUNKTION FÖR ATT VISA TT LISTAN UPPDATERATS FRÅN 
         }
     }
 </script>
