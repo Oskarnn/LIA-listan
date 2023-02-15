@@ -1,5 +1,6 @@
 <script>
     export default {
+        emits: ['changedCount'],
         created() {
             this.fetch();
         },
@@ -14,15 +15,19 @@
 
         methods: {
             fetch(){
-                fetch('/info.json')
+                fetch('http://localhost:3000/companies')
                 .then((response) => response.json())
                 .then((result) =>  {
                     this.companies = result;
                     })
 
             },
-        //  delete()
-        }
+
+             companyCount(){
+                 this.$emit('changedCount', this.companies.length)
+            }
+        },
+
     }
 </script>
 
@@ -58,8 +63,9 @@
         </div>
     </section>
     <div id="btn">
-        <button @click="fetch()">Uppdatera listan</button>
+        <button @click="fetch(), companyCount()">Uppdatera listan</button>
     </div>
+    <!-- <input type="button" @click="companyCount()" value="iaisdaisd"> -->
 </template>
 
 <style scoped>
@@ -82,7 +88,15 @@
         margin: 7vh;
         border: 1px solid black;
         border-radius: 20px;
+        width: 200px;
+        height: 150px;
 
+
+    }
+
+    li > p {
+        font-size: 1.3rem;
+        margin-top: 1.5vh;
     }
     h3{
         margin-top: 4vh;

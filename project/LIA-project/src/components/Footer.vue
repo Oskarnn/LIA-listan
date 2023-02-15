@@ -2,11 +2,14 @@
 
 <script>
 export default {
+  props: [ 'count' ],
+
   data() {
     return {
       date: "2023-02-09",
+
     };
-  }
+  },
 };
 </script>
 

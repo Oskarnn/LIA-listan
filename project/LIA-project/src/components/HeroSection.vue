@@ -1,5 +1,9 @@
-<script setup>
+<script>
+    export default {
+        props: {count: Number
+    },
 
+    }
 </script>
 
 <template>
@@ -8,6 +12,7 @@
           <h1>Välkommen till LIA-listan</h1>
           <h2>Där jag samlar all information om företag och   hur det går i processen att söka LIA
            </h2>
+           <h2 v-if="count !== null">Just nu är det {{ count }} företag i listan.</h2>
         </div>
         <div class="welcome-space">
 
@@ -42,6 +47,7 @@
 .welcome-text > h2 {
     font-style: italic;
     font-size: 1.2rem;
+    margin-top: 10vh;
 }
 
 .welcome-space {
