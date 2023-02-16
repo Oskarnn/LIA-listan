@@ -2,16 +2,12 @@
 export default {
     created(){
 
+                // fetch('/info.json')
                 fetch('http://localhost:3000/companies')
                 .then((response) => response.json())
                 .then((result) =>  {
                     this.getCompanies = result;
-                    })
-                // fetch('/info.json')
-                // .then((response) => response.json())
-                // .then((result) =>  {
-                //     this.getCompanies = result;
-                //     })
+                    });
 
 
 },

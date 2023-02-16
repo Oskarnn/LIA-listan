@@ -15,6 +15,8 @@
 
         methods: {
             fetch(){
+
+                 // fetch('/info.json')
                 fetch('http://localhost:3000/companies')
                 .then((response) => response.json())
                 .then((result) =>  {
