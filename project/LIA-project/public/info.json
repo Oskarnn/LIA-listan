@@ -69,6 +69,13 @@
       "info": "Webbbyrå",
       "location": "Stockholm/ Umeå",
       "status": "Kallad på intervju"
+    },
+    {
+      "id": 11,
+      "name": "Activision",
+      "info": "Spelbolag",
+      "location": "Stockholm",
+      "status": "Kallad på intervju"
     }
   ]
 }
